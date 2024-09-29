@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>My portfolio</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script src="https://kit.fontawesome.com/0959d6ec7e.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    
+                    <ul>
+                        <li><a href="#1">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Projects & Courses</a></li>
+                        <li><a href="#3">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text" id="1">
+                    <h2>Student Portfolio</h2>
+                    <h1> Hi, I'm <span>Manaswi Hanumalasetty</span><br>IV Semester, B.Tech</h1>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="C:\Users\hp\OneDrive\Documents\Student Port\P2.JPG">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>
+                    Manaswi Hanumalasetty<br>
+                    Born on 10-Oct-2004<br>
+                    I am currently pursuing my B.Tech at SRM University AP, having completed my schooling and intermediate in Ongole.<br> 
+                    I am a dedicated and detail-oriented individual with a strong academic foundation, seeking an internship opportunity to further my professional growth.<br>
+                    I possess excellent communication and learning skills, one of my key strengths is my ability to approach problems analytically and creatively. 
+                        </p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Developer Tools</span><br>C, C++, DS, Python, HTML, CSS, JS</li>
+                                <li><span>Languages</span><br>Telugu, English, Hindi.</li>
+                                <li><span>Sports</span><br>Shuttle, Carroms</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents"id="education">
+                            <ul>
+                                <li><span>B.Tech</span><br>SRM University, Mangalagiri, Andhra Pradesh</li>
+                                <li><span>Intermediate</span><br>Sri Chaitanya Junior College, Ongole, Andhra Pradesh</li>
+                                <li><span>Matriculation</span><br>Sri Chaitanya School, Ongole, Andhra Pradesh</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">PROJECTS...</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Employee Management System </h2>
+                        <p> C, Linked List </p>
+                        
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Closet Organizer </h2>
+                        <p> Data Structures </p>
+                        
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-key"></i>
+                        <h2>Student result management system</h2>
+                        <p>HTML,CSS & JavaScript </p>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">COURSES...</h1>
+                <div class="services-list">
+            <div>
+                <a href="The Joy Of Computing Using Python.pdf" download><font size="6">The Joy Of Computing Using Python</a></font>
+                </div>
+            <div>
+                <a href="Psychology Of Stress, Health And Well-Being.pdf" download><font size="6">Psychology Of Stress, Health And Well-Being</a></div></font>
+            <div>
+                <a href="Education for Sustainable Development.pdf" download><font size="6">Education for Sustainable Development</a></font>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<div class="aaa" id="3">
+    <div class="maa">
+    <div  class="bt  ">
+        
+    <a href="my resume.html.pdf" download class="btn ">Download Resume</a>
+</div>
+</div>
+    </div>
+<div id="contact">
+    <div class="container">
+        <div class="contactleft">
+            <h1>Contact Me</h1>
+            <p><i class='bx bxl-gmail' ></i>manaswi_hanumalasetty@srmap.edu.in</p>
+            <div class="socialicons">
+              
+                
+                <a href="https://www.linkedin.com/in/manaswi-hanumalasetty-5b2227259/" target="_blank"><i class='bx bxl-linkedin bx-burst bx-rotate-90' ></i>Linkedin</a></div>
+                 <div class="socialicons">
+                <a href="https://github.com/manaswi-10"target="_blank"><i class='bx bxl-github bx-tada bx-flip-horizontal' ></i>GitHub</a></div>
+                <div class="socialicons">
+                <a href="https://www.instagram.com/manaswi_hanumalasetty/" target="_blank"><i class='bx bxl-instagram bx-tada bx-rotate-90' ></i>Instagram</a>
+           
+            </div>
+        </div>
+    </div>
+      </div>
+
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+    </body>
+</html>
