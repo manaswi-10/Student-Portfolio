@@ -232,9 +232,9 @@ nav ul li a:hover::after{
     font-size: 60px;
 }
 .contactright{
-    flex-basis: 50%; /* Changed from 60% to 50% */
-    display: flex; /* Added to align items */
-    justify-content: flex-end; /* Added to align items to the right */
+    flex-basis: 50%; 
+    display: flex; 
+    justify-content: flex-end; 
 }
 .contactleft p{
     margin-top: 9px;
@@ -257,7 +257,7 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .contactright form{
-    width:100%; /* Changed from 50% to 100% */
+    width:100%; 
 }
 form input,form textarea{
     width:100%;
@@ -271,7 +271,6 @@ form input,form textarea{
     border-radius: 6px;
 }
 .sub {
-    /* Add your CSS styles here */
     background-color: #ff004f;
     color: black;
     left:20%;
@@ -289,4 +288,5 @@ form input,form textarea{
     background-color: #ababab;
     transform:translateY(-5px);
     size: 100px;
+
 }
